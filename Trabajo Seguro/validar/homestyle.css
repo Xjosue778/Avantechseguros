@@ -1,0 +1,270 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --bg-color: #fff;
+  --text-color: #fff;
+  --font-size: 18px;
+}
+
+header{
+  position: absolute;
+  display: flex;
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  z-index: 1000;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 20px 10%;
+  transition: ease .40s;
+  
+  
+}
+
+.logo{
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+   color: #fff;
+}
+
+.nav{
+  display: flex;
+}
+.bx-menu {
+  font-size: 500;
+  font-weight:600 ;
+}
+
+.nav a{
+  font-size: var(--font-size);
+  font-weight: 500;
+  padding: 10px 10px;
+  border-radius: 4px;
+  transition: ease .40;
+  color: var(--bg-color);
+}
+
+.nav li a:hover{
+  color: #53b4f5;
+  transform: scale(1.1);
+  transition: ease .40s;
+}
+
+.dropdown {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+.nav li:hover .dropdown {
+  display: block;
+}
+
+.nav ul:hover .dropdown{
+  background-color: #fff;
+}
+
+section{
+  padding: 80px 10%;
+}
+
+.home{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 100vh;
+  background-color: #00111c;
+  align-items: center;
+}
+
+.home-text{
+  margin-top: 10%;
+  position: relative;
+}
+
+.home-text h1{
+  color: var(--text-color);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.home-text p{
+  color: #fff;
+  font-size: 20px;
+  line-height: 38px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.home-btn{
+  display: inline-block;
+  color: var(--bg-color);
+  font-size: 16px;
+  padding: 15px 30px;
+  background-color: #0a9dff;
+  border-radius: 4px;
+  transition: ease .40s;
+}
+
+.home-btn:hover{
+  background-color: #53b4f5;
+  transform: scale(1.1);
+}
+
+.home-img img{
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+  
+}
+
+.about{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  align-items: center;
+  
+}
+
+
+.about-textt h1{
+  color: #53b4f5;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  justify-content: center;
+  height: 10vh !important;
+
+}
+.obj{
+  color: #53b4f5;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+  height: 15vh !important;
+}
+.nos{
+  color: #53b4f5;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+  height: 10vh !important;
+}
+.about-text p{
+  line-height: 38px;
+  font-weight: 400;
+  text-align: center;
+  justify-content: center;
+
+}
+.about-textt p{
+  line-height: 38px;
+  font-weight: 400;
+  text-align: center;
+  justify-content: center;
+
+  
+}
+.about-textt span{
+  color: #bed3e1;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  justify-content: center;
+
+}
+
+
+.row-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+ 
+}
+
+.container-box{
+  margin: 70px;
+ padding: 10px;
+}
+
+.container-img img{
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+}
+.footer-basic {
+  padding:40px 0;
+  background-color: #00111c;
+  color:#d2d6da;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}

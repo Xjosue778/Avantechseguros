@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cotizador de Seguros de Vehículos</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+
+
+    <section class=home id="home">
+      <div class="home-text">
+        <h1 class="coti">Cotiza el seguro<br>de tu vehículo</h1>
+        
+      </div>
+    
+
+  <form class=cotizacionForm id="cotizacionForm">
+    <label for="edadConductor">Edad del Conductor:</label>
+    <input type="number" id="edadConductor" name="edadConductor" required>
+
+    <label for="tipoVehiculo">Tipo de Vehículo:</label>
+    <select id="tipoVehiculo" name="tipoVehiculo" required>
+      <option value="">Seleccionar</option>
+      <option value="carro">Carro</option>
+      <option value="camioneta">Camioneta</option>
+      <option value="jeepata">Jeepeta</option>
+    </select>
+
+    <label for="modeloVehiculo">Modelo del Vehículo:</label>
+    <input type="text" id="modeloVehiculo" name="modeloVehiculo" required>
+
+    <button type="submit">Obtener Cotización</button>
+    
+  <div id="resultadoCotizacion"></div>
+  
+  </form>
+ 
+  
+    </section>
+  <script src="java.js"></script>
+</body>
+</html>
